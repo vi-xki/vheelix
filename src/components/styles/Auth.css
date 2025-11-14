@@ -1,0 +1,247 @@
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 160px); /* Account for header and footer */
+  padding: 20px;
+}
+
+.auth-box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.auth-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.divider {
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 45%;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+.divider span {
+  background-color: white;
+  padding: 0 10px;
+  color: #666;
+}
+
+.google-button {
+  width: 100% !important;
+  justify-content: center !important;
+  margin-top: 10px !important;
+}
+
+.admin-login {
+  max-width: 320px;
+}
+
+.pin-icon {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.pin-icon i {
+  font-size: 3rem;
+  color: #007bff;
+}
+
+.pin-input {
+  text-align: center;
+  letter-spacing: 8px;
+  font-size: 24px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.pin-dots {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.pin-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #eee;
+  transition: all 0.3s ease;
+}
+
+.pin-dot.filled {
+  background: #007bff;
+  transform: scale(1.1);
+}
+
+.admin-login .submit-button {
+  background: #007bff;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.admin-login .submit-button:disabled {
+  cursor: not-allowed;
+}
+
+.admin-login .submit-button:not(:disabled) {
+  opacity: 1;
+}
+
+/* Hide number input spinners */
+.pin-input::-webkit-outer-spin-button,
+.pin-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.pin-input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.admin-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+}
+
+.admin-container .navbar {
+  background-color: #ffffff;
+  padding: 15px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.admin-container .navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-container .navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #dc3545;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.admin-container .logo-icon {
+  font-size: 2rem;
+}
+
+.admin-container .auth-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+
+.admin-container .admin-login {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.admin-container .pin-icon {
+  margin: 30px 0;
+}
+
+.admin-container .pin-icon i {
+  font-size: 3.5rem;
+  color: #dc3545;
+}
+
+.admin-container .submit-button {
+  background: #dc3545;
+  transition: background-color 0.3s;
+}
+
+.admin-container .submit-button:hover:not(:disabled) {
+  background: #c82333;
+}
+
+.admin-container .pin-dot.filled {
+  background: #dc3545;
+}
+
+@media (max-width: 768px) {
+  .admin-container .navbar-container {
+    padding: 0 15px;
+  }
+
+  .admin-container .admin-login {
+    margin: 0 15px;
+    padding: 30px;
+  }
+} 

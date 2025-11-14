@@ -1,0 +1,211 @@
+.confirmation-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.confirmation-box {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.success-icon {
+  font-size: 4rem;
+  color: #28a745;
+  margin-bottom: 20px;
+}
+
+.order-details {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.order-summary {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.summary-row:last-child {
+  border-bottom: none;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.continue-shopping,
+.view-orders {
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.continue-shopping {
+  background: #007bff;
+  color: white;
+}
+
+.view-orders {
+  background: none;
+  border: 1px solid #007bff;
+  color: #007bff;
+}
+
+.continue-shopping:hover {
+  background: #0056b3;
+}
+
+.view-orders:hover {
+  background: #f0f0f0;
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #eee;
+}
+
+.invoice-logo {
+  height: 60px;
+  width: auto;
+}
+
+.company-details {
+  text-align: right;
+}
+
+.company-details h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.company-details p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.invoice-details {
+  margin-bottom: 30px;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.invoice-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.invoice-row:last-child {
+  margin-bottom: 0;
+}
+
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.order-table th,
+.order-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.order-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+.order-table tfoot td {
+  font-weight: bold;
+  border-top: 2px solid #eee;
+}
+
+.thank-you-message {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 2px solid #eee;
+  text-align: center;
+  color: #666;
+}
+
+.download-pdf {
+  background: #28a745;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.download-pdf:hover {
+  background: #218838;
+}
+
+.download-pdf i {
+  font-size: 1.1rem;
+}
+
+@media print {
+  .action-buttons {
+    display: none;
+  }
+
+  .confirmation-box {
+    box-shadow: none;
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .order-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .company-details {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .download-pdf,
+  .continue-shopping,
+  .view-orders {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+} 
