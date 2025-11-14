@@ -4,12 +4,12 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './components/pages/Home';
-// import Services from './pages/Services';
-// import Booking from './pages/Booking';
-// import About from './pages/About';
-// import Contact from './pages/Contact';
-// import SignUp from './components/Auth/SignUp';
-// import Login from './components/Auth/Login';
+import Services from './components/pages/Services';
+import Booking from './components/pages/Booking';
+import About from './components/pages/About';
+import Contact from './components/pages/Contact';
+import SignUp from './components/Auth/SignUp';
+import Login from './components/Auth/Login';
 // import Shop from './pages/Shop';
 // import Cart from './pages/Cart';
 // import Checkout from './pages/Checkout';
@@ -29,12 +29,12 @@ const App: React.FC = () => {
           <main className="main-content">
             <Routes>
               <Route path="/" element={<Home />} />
-              {/* <Route path="/services" element={<Services />} />
+              <Route path="/services" element={<Services />} />
               <Route path="/booking" element={<Booking />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/signup" element={<SignUp />} />
-              <Route path="/login" element={<Login />} /> */}
+              <Route path="/login" element={<Login />} />
 
               {/* <Route
                 path="/shop"
