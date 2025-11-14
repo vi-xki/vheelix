@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <header className="hero-section">
-        <h1>Welcome to Vizon Garage</h1>
+        <h1>Welcome to Vheelix Garage</h1>
         <p>Expert repairs for two-wheelers and four-wheelers</p>
         <Link to="/services" className="cta-button">Book Service</Link>
       </header>

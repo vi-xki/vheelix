@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section">
-          <h3>Vizon Garage</h3>
+          <h3>Vheelix Garage</h3>
           <p>Professional two-wheeler and four-wheeler repair services.</p>
           <div className="social-links">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
@@ -53,7 +53,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; 2024 Vizon Garage. All rights reserved.</p>
+        <p>&copy; 2024 Vheelix Garage. All rights reserved.</p>
       </div>
     </footer>
   );

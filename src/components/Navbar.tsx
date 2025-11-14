@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className="navbar-container">
           <Link to="/admin/dashboard" className="navbar-logo">
             <i className="fas fa-tools logo-icon"></i>
-            <span>Vizon Garage Admin</span>
+            <span>Vheelix Garage Admin</span>
           </Link>
           <button onClick={handleLogout} className="admin-logout-btn">
             <i className="fas fa-sign-out-alt"></i> Logout
@@ -59,7 +59,7 @@ const Navbar = () => {
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
           <i className="fas fa-tools logo-icon"></i>
-          <span>Vizon Garage</span>
+          <span>Vheelix Garage</span>
         </Link>
 
         <div className="menu-icon" onClick={() => setIsOpen(!isOpen)}>
