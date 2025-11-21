@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useCart } from '../../context/CartContext';
 import '../styles/Shop.css';
-import type { Product, Category, BrandInfo, BrandsMap, ProductsMap, User, CartContextType } from '../types/order';
+import type { Product, Category, BrandsMap, ProductsMap, CartContextType } from '../types/order';
 
 const Shop: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<Category | 'all'>('brands');

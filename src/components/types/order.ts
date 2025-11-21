@@ -31,7 +31,7 @@ export interface CartContextType {
 
 export interface CartItem {
   id: number;
-  name: string;
+  name?: string;
   price: number;
   quantity: number;
   iconClass?: string;

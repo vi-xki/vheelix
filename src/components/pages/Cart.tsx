@@ -2,7 +2,7 @@ import type { FC } from "react";
 import { useCart } from "../../context/CartContext";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import "../styles/Cart.css";
-import type { User, CartItem,Product } from '../types/order';
+import type { CartItem, Product } from '../types/order';
 
 export interface CartContextType {
   cart: CartItem[];
