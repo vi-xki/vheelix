@@ -10,13 +10,13 @@ import About from './components/pages/About';
 import Contact from './components/pages/Contact';
 import SignUp from './components/Auth/SignUp';
 import Login from './components/Auth/Login';
-// import Shop from './pages/Shop';
-// import Cart from './pages/Cart';
+import Shop from './components/pages/Shop';
+import Cart from './components/pages/Cart';
 // import Checkout from './pages/Checkout';
 // import OrderConfirmation from './pages/OrderConfirmation';
 // import './styles/App.css';
 import { CartProvider } from './context/CartContext';
-// import ProtectedRoute from './components/ProtectedRoute';
+import ProtectedRoute from './components/ProtectedRoute';
 // import AdminLogin from './components/Auth/AdminLogin';
 // import AdminDashboard from './pages/admin/Dashboard';
 
@@ -36,23 +36,23 @@ const App: React.FC = () => {
               <Route path="/signup" element={<SignUp />} />
               <Route path="/login" element={<Login />} />
 
-              {/* <Route
+              <Route
                 path="/shop"
                 element={
                   <ProtectedRoute>
                     <Shop />
                   </ProtectedRoute>
                 }
-              /> */}
+              />
 
-              {/* <Route
+              <Route
                 path="/cart"
                 element={
                   <ProtectedRoute>
                     <Cart />
                   </ProtectedRoute>
                 }
-              /> */}
+              />
 {/* 
               <Route
                 path="/checkout"
