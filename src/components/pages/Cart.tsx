@@ -29,7 +29,7 @@ const Cart: FC = () => {
     return <div className="loading">Loading...</div>;
   }
 
-  const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  const total = cart.reduce((sum, item) => sum + (item.price ?? 0) * item.quantity, 0);
 
   if (cart.length === 0) {
     return (
@@ -67,7 +67,7 @@ const Cart: FC = () => {
             <div className="item-details">
               <h3>{item.name}</h3>
               <p>{item.description}</p>
-              <div className="item-price">₹{item.price.toFixed(2)}</div>
+              <div className="item-price">₹{item.price?.toFixed(2)}</div>
             </div>
 
             <div className="item-quantity">
@@ -92,7 +92,8 @@ const Cart: FC = () => {
             </div>
 
             <div className="item-total">
-              ₹{(item.price * item.quantity).toFixed(2)}
+              ₹
+              {((item.price ?? 0) * (item.quantity ?? 0)).toFixed(2)}
             </div>
 
             <button
