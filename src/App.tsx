@@ -12,13 +12,13 @@ import SignUp from './components/Auth/SignUp';
 import Login from './components/Auth/Login';
 import Shop from './components/pages/Shop';
 import Cart from './components/pages/Cart';
-// import Checkout from './pages/Checkout';
-// import OrderConfirmation from './pages/OrderConfirmation';
-// import './styles/App.css';
+import Checkout from './components/pages/Checkout';
+import OrderConfirmation from './components/pages/OrderConfirmation';
+import './components/styles/App.css';
 import { CartProvider } from './context/CartContext';
 import ProtectedRoute from './components/ProtectedRoute';
-// import AdminLogin from './components/Auth/AdminLogin';
-// import AdminDashboard from './pages/admin/Dashboard';
+import AdminLogin from './components/Auth/AdminLogin';
+import AdminDashboard from './components/pages/admin/Dashboard';
 
 const App: React.FC = () => {
   return (
@@ -53,7 +53,7 @@ const App: React.FC = () => {
                   </ProtectedRoute>
                 }
               />
-{/* 
+
               <Route
                 path="/checkout"
                 element={
@@ -61,28 +61,28 @@ const App: React.FC = () => {
                     <Checkout />
                   </ProtectedRoute>
                 }
-              /> */}
+              />
 
-              {/* <Route
+              <Route
                 path="/order-confirmation"
                 element={
                   <ProtectedRoute>
                     <OrderConfirmation />
                   </ProtectedRoute>
                 }
-              /> */}
+              />
 
-              {/* <Route path="/admin/login" element={<AdminLogin />} />
-              <Route path="/admin" element={<AdminLogin />} /> */}
+              <Route path="/admin/login" element={<AdminLogin />} />
+              <Route path="/admin" element={<AdminLogin />} />
 
-              {/* <Route
+              <Route
                 path="/admin/dashboard"
                 element={
                   <ProtectedRoute adminOnly>
                     <AdminDashboard />
                   </ProtectedRoute>
                 }
-              /> */}
+              />
 
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>

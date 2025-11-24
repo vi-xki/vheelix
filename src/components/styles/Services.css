@@ -1,5 +1,5 @@
 .services-container {
-  padding: 40px 20px;
+  /* padding: 40px 20px; */
 }
 
 .services-container h1 {
@@ -11,7 +11,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 

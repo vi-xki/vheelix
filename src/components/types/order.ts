@@ -32,9 +32,38 @@ export interface CartContextType {
 export interface CartItem {
   id: number;
   name?: string;
-  price: number;
+  price?: number;
   quantity: number;
+  items?: number;
+  total?: number;
   iconClass?: string;
   description?: string;
   category?: string;
+}
+
+
+export interface Address {
+  street: string;
+  city: string;
+  state: string;
+  pincode: string;
+  phone: string;
+}
+
+export interface Order {
+  id: number;
+  items: CartItem[];
+  total: number;
+  date: string;
+  paymentMethod: 'upi' | 'cod';
+  status: 'Pending' | 'Completed';
+  address: Address;
+  paymentDetails: { upiId: string } | null;
+}
+
+export interface StoredUser {
+  email: string;
+  cart?: CartItem[];
+  orders?: Order[];
+  // add other user fields if you have them
 }
