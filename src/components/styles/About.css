@@ -1,5 +1,6 @@
 .about-container {
-  /* padding: 40px 20px; */
+  place-items: center;
+      
 }
 
 .about-content {

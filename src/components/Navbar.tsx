@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import './styles/Navbar.css';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import LogoutIcon from '@mui/icons-material/Logout';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +30,7 @@ const Navbar = () => {
             <span>Vheelix Garage Admin</span>
           </Link>
           <button onClick={handleLogout} className="admin-logout-btn">
-            <i className="fas fa-sign-out-alt"></i> Logout
+           <LogoutIcon style={{ marginRight: "6px" }}/> Logout
           </button>
         </div>
       </nav>
@@ -83,7 +85,7 @@ const Navbar = () => {
             {user ? (
               <>
                 <Link to="/cart" className="cart-btn">
-                  <i className="fas fa-shopping-cart"></i>
+                  <ShoppingCartIcon className="cart-icon" />
                   {cartItemCount > 0 && <span className="cart-count">{cartItemCount}</span>}
                 </Link>
                 <div className="user-menu">

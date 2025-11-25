@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { useCart } from '../../context/CartContext';
 import '../styles/Shop.css';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import type { Product, Category, BrandsMap, ProductsMap, CartContextType } from '../types/order';
 
 const Shop: React.FC = () => {
@@ -301,7 +302,7 @@ const Shop: React.FC = () => {
     <div className="shop-container">
       <div className="brand-header">
         <button className="back-button" onClick={() => setSelectedBrand(null)}>
-          <i className="fas fa-arrow-left"></i> Back to Brands
+           <ArrowBackIcon style={{ marginRight: "6px" }} /> Back to Brands
         </button>
         <h2>{selectedBrand} Products</h2>
       </div>

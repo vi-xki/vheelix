@@ -1,10 +1,13 @@
 import { Link } from 'react-router-dom';
 import '../styles/Home.css';
 
+import homeimage from '../../assets/images/suzuki-hayabusa-home.jpg'
+
 const Home = () => {
   return (
     <div className="home-container">
-      <header className="hero-section">
+      <header className="hero-section" style={{ backgroundImage: `url(${homeimage})` }}>
+        
         <h1>Welcome to Vheelix Garage</h1>
         <p>Expert repairs for two-wheelers and four-wheelers</p>
         <Link to="/services" className="cta-button">Book Service</Link>

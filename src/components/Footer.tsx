@@ -1,5 +1,10 @@
 import { Link } from 'react-router-dom';
 import './styles/Footer.css';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import PhoneIcon from '@mui/icons-material/Phone';
+import EmailIcon from '@mui/icons-material/Email';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+
 
 const Footer = () => {
   return (
@@ -43,17 +48,18 @@ const Footer = () => {
 
         <div className="footer-section">
           <h4>Contact Info</h4>
-          <ul className="contact-info">
-            <li><i className="fas fa-map-marker-alt"></i> 123 Mechanic Street, City</li>
-            <li><i className="fas fa-phone"></i> +1 234 567 8900</li>
-            <li><i className="fas fa-envelope"></i> info@mechanicare.com</li>
-            <li><i className="fas fa-clock"></i> Mon-Sat: 8:00 AM - 6:00 PM</li>
+          <ul className="footer-contact-info">
+            <li><LocationOnIcon /> 123 Mechanic Street, City</li>
+            <li><PhoneIcon /> +1 234 567 8900</li>
+            <li><EmailIcon /> info@mechanicare.com</li>
+            <li><AccessTimeIcon /> Mon-Sat: 8:00 AM - 6:00 PM</li>
           </ul>
+
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; 2024 Vheelix Garage. All rights reserved.</p>
+        <p>&copy; 2025 Vheelix Garage. All rights reserved.</p>
       </div>
     </footer>
   );
